@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid">
+                <!-- Menu de navegação -->
+            <div class="menu fixed-top shadow">
+                <button type="button" class="btn_menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-grid-3x3-gap-fill btn_pontos" viewBox="0 0 16 16">
+                        <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                </div>
+            </div>
+            <!-- Menu de navegação -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div><img src="imagem/borda_vitoriana_provavelmente_escolhida.png" class="d-block w-100"></div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="imagem/borda_vitoriana_provavelmente_escolhida.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="imagem/borda_vitoriana_provavelmente_escolhida.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="text-center text-lg-start foot">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12">
+                            <h5 class="text-uppercase mt-4">Formulário de contato</h5>
+                            <div class="row-mt-2">
+                                <!-- colocar o email da mae -->
+                                <form action="https://formsubmit.co/colocar-email-mae" method="post">
+                                <!-- colocar o email da mae -->    
+                                    <div class="col-md-4">
+                                        <label for="inputNome" class="form-label">Nome</label>
+                                        <input type="text" name="Nome" v-model="contato.nome" class="form-control" id="inputNome" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" name="Email" v-model="contato.email" class="form-control" id="inputEmail" required>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <label for="inputMensagem" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" name="Mensagem" v-model="contato.mensagem" id="inputMensagem" required></textarea>
+                                    </div>
+                                    <div class="col-md-2 mb-4 mt-4">
+                                        <input type="submit" class="form-control btn_form" id="inputSubmit" value="send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12 mb-4 mt-4 mb-md-0">
+                            <h4 class="text-uppercase">Horário de funcionamento</h4>
+                            <p>
+                                Segunda à sexta das 7:00hs às 19:00<br>
+                                Sábados das 7:00 às 15:00hs<br><br>
+                            </p>
+                            <h4 class="text-uppercase">Celulares</h4>
+                            <p>    
+                                Telefone: (21) 2527-7125<br>
+                                Whatsapp:(21) 9721-30412<br>
+                                Telefone: (21)99908-4435<br>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+
+                    <!-- ponto de pouso menu sobre_nos -->
+                    <span id="contato"></span>
+                    <!-- ponto de pouso menu sobre_nos -->
+
+                    <!-- Footer -->
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/f5867d3ebd.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+
+    const vm = new Vue({
+        el: '#app',
+        methods: {
+            mostrarConsole() {
+                console.log(this.prontuario);
+            }
+        },
+        data: {
+            contato: {
+                nome: '',
+                email: '',
+                mensagem: '',
+            }
+        }
+    });
+</script>
+
+</html>
