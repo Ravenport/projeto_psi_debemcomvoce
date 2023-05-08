@@ -1,11 +1,84 @@
+@font-face {
+    font-family: plante;
+    src: url(font/Plante.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: serif;
+}
+
+p, span{
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 body {
     background-color: #faf4e7;
+}
+
+#text-sobre-nos {
+    margin-right: 10%;
+    padding: 10px;
+    text-align: justify;
+}
+
+#titulo-sobre-nos {
+    font-family: plante;
+    font-size: 80px;
+}
+
+.sub-titulo-plante {
+    font-size: 35px;
+}
+
+.font_plante {
+    font-family: plante;
+}
+
+.sobre-nos-linha {
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu {
+    list-style: none;
+}
+
+.offcanvas-body a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-top: 10px;
+    height: 8%;
+    text-decoration: none;
+    color: black;
+}
+.alinhar-projetos-direita {
+    justify-content: end;
+    align-items: end;
+    margin-right: 100px;
+    margin-top: 200px;
+    text-align: right;
+}
+
+.alinhar-projetos-esquerda {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.primeiro-projeto {
+    margin-top: 300px;
+}
+
+.projetos {
+    gap: 150px;
 }
 
 .offcanvas {
@@ -21,7 +94,7 @@ body {
 }
 
 .espaco_branco {
-    height: 650px;
+    height: 300px;
     display: block;
 }
 
@@ -44,4 +117,3 @@ body {
 .btn_pontos:hover{
     color: #7EA79C;
 }
-
